@@ -2,13 +2,18 @@
  * 5.0 Content
  */
 
-h1, h2, h3, h4, h5 ,h6 {
-    font-family: '', sans-serif;
+h1, h2, h4, h5 {
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
 
+h6, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+
 a, p {
-    font-family: '', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
 
@@ -22,5 +27,270 @@ html, body {
     width: 100%;
     height: 100%;
     margin: 0;
-    
+    padding: 0;
+    background-color: #fff;
+}
+#page-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    border: 40px solid #fff;
+    background-color: #a563ef;
+    -webkit-transition: width .3s;
+    -moz-transition: width .3s;
+    transition: width .3s;
+}
+#wrapper.left {
+     width: 50%;
+
+}
+#logo {
+    position: absolute;
+    opacity: .7;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    transition: opacity .3s;
+    cursor: pointer;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    transition: opacity .3s;
+}
+.left #logo {
+    opacity: 0;
+}
+#logo:hover{
+    opacity: 1;
+}
+#logo div{
+    display: block;
+    width: 180px;
+    height: 90px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/logo.png);
+}
+#corner {
+    width: 320px;
+    height: 320px;
+    background-color: #fff;
+    -webkit-transform: translate(50%, -50%) rotate(45deg);
+    -moz-transform: translate(50%, -50%) rotate(45deg);
+    -ms-transform: translate(50%, -50%) rotate(45deg);
+    transform: translate(50%, -50%) rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#heart {
+    position: absolute;
+    left: -80px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#heart i {
+    font-size: 1200px;
+    color: #fff;
+    opacity: .15;
+}
+
+
+#message {
+    border-left: 1px solid #fff;
+    padding: 20px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    min-width: 500px;
+    max-height: 75%;
+    overflow-y: auto;
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translateY(-50%, -50%);
+    -webkit-transition: opacity .3s, transform .3s;
+    -moz-transition: opacity .3s, transform .3s;
+    transition: opacity .3s, transform .3s;
+}
+.left #message {
+    opacity: 0;
+    -webkit-transform: tanslate(-100%, -50%);
+    -moz-transform: tanslate(-100%, -50%);
+    -ms-transform: tanslate(-100%, -50%);
+    transform: tanslate(-100%, -50%);
+}
+h1 {
+    margin-top: 0;
+    font-size: 36px;
+    color: #fff;
+}
+h2 {
+    font-size: 18px;
+    color: #fff;    
+}
+h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #fff;
+    opacity: .6;
+    text-transform: uppercase;
+}
+
+#about {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    opacity: 0;
+    padding: 40px;
+    -webkit-transition: opacity .3s, transform .3s;
+    -moz-transition: opacity .3s, transform .3s;
+    transition: opacity .3s, transform .3s;
+}
+#about.left {
+    opacity: 1;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+#about-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 40px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+#about-logo {
+    width: 180px;
+    height: 90px;
+    margin: 0 auto;
+    opacity: .4;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/logo_black.png);
+}
+#about p {
+    opacity: .8;
+    font-size: 18px;
+    margin: 100px 0;
+}
+#about-close {
+    display: inline-block;
+    opacity: .4;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+#about-close:hover {
+    opacity: 1;
+}
+#close-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#close-icon span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    width: 16px;
+    background-color: #000;
+}
+#close-icon span:first-child {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#close-icon span:last-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#about-close h6 {
+    font-size: 16px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/**
+ * 5.0 Content
+ */
+
+footer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+footer a,
+footer a:link,
+footer a:active,
+footer a:visited {
+    margin: 5px 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    opacity: .4;
+    display: block;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+footer a:hover {
+    opacity: 1;
+}
+footer a:first-child {
+    margin-top: 0;
+}
+footer a:last-child {
+    margin-bottom: 0;
+}
+footer a h6 {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+footer a i {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+#about-link i.fa-times,
+.left #about-link i.fa-info-circle {
+    display: none;
+}
+.left #about-link i.fa-times,
+#about-link i.fa-info-circle {
+    display: inline-block;
 }

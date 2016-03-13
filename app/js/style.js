@@ -18,12 +18,12 @@ function sizeitup() {
 	}
 }
 
-$("#more").click(function() {
-	$("#main").addClass("other");
-	$("#other-queries").addClass("other");
-})
+$("#about-link").click(function() {
+	$("#wrapper").toggleClass("left");
+	$("#about").toggleClass("left");
+});
 
-$("#less").click(function() {
-	$("#main").removeClass("other");
-	$("#other-queries").removeClass("other");
-})
+$("#about-close").click(function() {
+	$("#wrapper").removeClass("left");
+	$("#about").removeClass("left");
+});
