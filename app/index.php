@@ -18,12 +18,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
 
-    <title>Tessa</title>
+    <title>Together with Tessa</title>
     <meta name="description" content="">
     <meta name="author" content="Alwin Hui and Max Yeo">
 
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
 
     <meta name="theme-color" content="">
 
@@ -38,13 +38,18 @@
 </head>
 
 <body>
+    <div id="loader">
+        <div id="loader-logo"></div>
+        <span></span>
+    </div>
+    <div id="unloader"></div>
 <div id="page-wrap">
 	<div id="wrapper">
         <div id="heart"><i class="fa fa-heart"></i></div>
         <a href="" id="logo"><div></div></a>
         <div id="corner"></div>
 	    <div id="pic">
-            <div id="pic-image"></div>
+            <div id="pic-image" style="background-image: url(img/sample.jpg);"></div>
         </div>
         <div id="message">
             <h1>Get Well Soon! You're the kindest and most beautiful person I know!</h1>
